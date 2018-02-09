@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rix-5o-Sbx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qfQ-h3-8Zz">
+            <objects>
+                <viewController id="rix-5o-Sbx" customClass="ViewController" customModule="Magic_Trick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qwf-bo-RRk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1N-UZ-iFG">
+                                <rect key="frame" x="0.0" y="20" width="376" height="657"/>
+                            </arscnView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJL-Ww-Giz">
+                                <rect key="frame" x="40" y="599" width="296" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvg-zW-uK5">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="144" id="6k0-J7-9oC"/>
+                                            <constraint firstAttribute="height" constant="48" id="S8F-ec-BF1"/>
+                                        </constraints>
+                                        <state key="normal" title="Magic">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="magicButtonPressed:" destination="rix-5o-Sbx" eventType="touchUpInside" id="4kl-V1-Sm9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQ6-kH-Kav">
+                                        <rect key="frame" x="152" y="0.0" width="144" height="48"/>
+                                        <color key="backgroundColor" red="0.051878072320000003" green="0.71935087440000001" blue="0.90370905400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="144" id="LSM-Sv-jcC"/>
+                                            <constraint firstAttribute="height" constant="48" id="Ogk-sk-wat"/>
+                                        </constraints>
+                                        <state key="normal" title="Throw">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="throwButtonPressed:" destination="rix-5o-Sbx" eventType="touchUpInside" id="aA5-KQ-Arg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQi-kW-xqg">
+                                <rect key="frame" x="40" y="60" width="296" height="99"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="0.3830265410958904" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p1N-UZ-iFG" firstAttribute="leading" secondItem="Bad-T2-9NU" secondAttribute="leading" id="00Y-Od-uSm"/>
+                            <constraint firstItem="BQi-kW-xqg" firstAttribute="leading" secondItem="Bad-T2-9NU" secondAttribute="leading" constant="40" id="4h4-tK-v0u"/>
+                            <constraint firstItem="sJL-Ww-Giz" firstAttribute="leading" secondItem="Bad-T2-9NU" secondAttribute="leading" constant="40" id="5hU-Dq-SG8"/>
+                            <constraint firstItem="Bad-T2-9NU" firstAttribute="trailing" secondItem="p1N-UZ-iFG" secondAttribute="trailing" id="98D-9f-aRb"/>
+                            <constraint firstItem="BQi-kW-xqg" firstAttribute="top" secondItem="Bad-T2-9NU" secondAttribute="top" constant="40" id="Clm-Vj-HYv"/>
+                            <constraint firstItem="Bad-T2-9NU" firstAttribute="bottom" secondItem="p1N-UZ-iFG" secondAttribute="bottom" id="HYt-JT-LYl"/>
+                            <constraint firstItem="Bad-T2-9NU" firstAttribute="bottom" secondItem="sJL-Ww-Giz" secondAttribute="bottom" constant="30" id="Mp8-zx-tBT"/>
+                            <constraint firstItem="Bad-T2-9NU" firstAttribute="trailing" secondItem="sJL-Ww-Giz" secondAttribute="trailing" constant="40" id="QD3-mj-e5k"/>
+                            <constraint firstItem="Bad-T2-9NU" firstAttribute="trailing" secondItem="BQi-kW-xqg" secondAttribute="trailing" constant="40" id="QHr-6h-CBI"/>
+                            <constraint firstItem="sJL-Ww-Giz" firstAttribute="top" secondItem="BQi-kW-xqg" secondAttribute="bottom" constant="440" id="SPK-EJ-8EQ"/>
+                            <constraint firstItem="sJL-Ww-Giz" firstAttribute="top" secondItem="Bad-T2-9NU" secondAttribute="top" constant="579" id="eI3-wf-dAw"/>
+                            <constraint firstItem="p1N-UZ-iFG" firstAttribute="top" secondItem="Bad-T2-9NU" secondAttribute="top" id="edd-zG-h76"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bad-T2-9NU"/>
+                    </view>
+                    <connections>
+                        <outlet property="helperLabel" destination="BQi-kW-xqg" id="cow-15-t5Y"/>
+                        <outlet property="magicButton" destination="uvg-zW-uK5" id="Ohn-S2-fQL"/>
+                        <outlet property="sceneView" destination="p1N-UZ-iFG" id="2kI-RE-NgZ"/>
+                        <outlet property="throwButton" destination="QQ6-kH-Kav" id="uFv-17-b4e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaP-SO-di7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AXe-X2-guq">
+                    <connections>
+                        <action selector="viewTapped:" destination="rix-5o-Sbx" id="zfj-lI-wci"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="816.79999999999995" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>
